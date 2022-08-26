@@ -1,0 +1,88 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --background-color-h1: #FFFFFF;
+    --hero-color: #2F303A;
+    --background-color: #F5F4FA;
+    --logo-color: #000000;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(-background-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Header*/
+
+.link.current {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--logo-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.link,
+.contacts,
+.connection {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+}
+
+
+.link:hover,
+.link:focus,
+.contacts:hover,
+.contacts:focus,
+.connection:hover,
+.connection:focus,
+.adress:hover,
+.adress:focus {
+    color: var(--accent-color);
+}
+
+
+/* Footer */
+
+.footerr {
+    background-color: var(--hero-color);
+}
+
+.adress {
+    color: var(--background-color-h1);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.contacts {   
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
