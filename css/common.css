@@ -6,6 +6,7 @@
     --hero-color: #2F303A;
     --background-color: #F5F4FA;
     --logo-color: #000000;
+    --transparent-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -75,6 +76,7 @@ a {
 .adress {
     color: var(--background-color-h1);
     font-size: 14px;
+    font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -82,7 +84,8 @@ a {
 
 .contacts {   
     font-size: 14px;
+    font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--transparent-color);
 }

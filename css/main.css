@@ -6,6 +6,7 @@
     --hero-color: #2F303A;
     --background-color: #F5F4FA;
     --logo-color: #000000;
+    --transparent-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -19,7 +20,15 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
     /*Header*/
+
+.link.current {
+    color: var(--accent-color);
+}
 
 .logo {
     color: var(--logo-color);
@@ -81,12 +90,21 @@ ul {
     border-radius: 4px;
 }
 
-.button:focus,
-.button:hover {
-    background-color: var(--primary-text-color);
-}
 
 /* Section */
+
+.title.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .section-title {
     color: var(--title-text-color);
@@ -98,6 +116,7 @@ ul {
 p {
     font-size: 14px;
     line-height: 1.7;
+    
 }
 
 .title {
@@ -117,11 +136,52 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 
 .position {
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+}
+
+/* Button */
+
+.button {
+    color: var(--title-text-color);
+    font-family: inherit;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--background-color-h1);
+    background-color: var(--accent-color);
+}
+
+
+/* List */
+
+
+.list-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+p {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -132,7 +192,7 @@ p {
 
 .adress {
     color: var(--background-color-h1);
-    font-family: 'Roboto';
+    font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     text-decoration: none;
@@ -140,6 +200,7 @@ p {
 
 .contacts {
     font-size: 14px;
+    font-style: normal;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--transparent-color);
 }
