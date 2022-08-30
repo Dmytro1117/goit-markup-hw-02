@@ -31,7 +31,7 @@ a {
    color: var(--accent-color);
 }
 
-.button.current {
+.button.active {
     color: var(--background-color-h1);
     background-color: var(--accent-color);
 }
