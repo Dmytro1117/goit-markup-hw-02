@@ -27,9 +27,13 @@ a {
 
     /*Header*/
 
-.link.current,
+.link.current {
+   color: var(--accent-color);
+}
+
 .button.current {
-    color: var(--accent-color);
+    color: var(--background-color-h1);
+    background-color: var(--accent-color);
 }
 
 .logo {
@@ -107,6 +111,7 @@ a {
 
 .work-title {
     color: var(--title-text-color);
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
